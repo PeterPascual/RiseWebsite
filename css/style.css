@@ -1,0 +1,31 @@
+/* key stuff */
+
+#myVideo {
+    position: absolute;
+    right: 0;
+    min-width: 100%; 
+    min-height: 95%;
+}
+.video-container {
+    position: relative;
+    width: 100%;
+
+}
+
+.actual-video {
+    position: static;
+	padding-top:5px;
+    padding-bottom: 5px;
+    height: auto;
+    width: 100%;
+
+
+}
+.title-image{
+    position: relative;
+    top: 50px;
+    left: 0px;
+    }
+.container{
+ background-color: aliceblue;
+}
