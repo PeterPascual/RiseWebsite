@@ -4,14 +4,21 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rise of the Pirates</title>
-        <meta name="description" content="An Online 2D MO game with powers and adventure.">
+        <meta name="description" content="An online 2D multiplayer pvp focused game loosly pirate themed full of mysteries, treasure, powerful abilities, magic, crafting and adventure!">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+
         <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-ML9h/UCooefre72ZPxxOHyjbrLT1xKV0AHON1J+OlOV2iwcYemqmWyMfTcfyzLJ1" crossorigin="anonymous">  
         <link rel="stylesheet" type="text/css" href= "css/style.css">
     </head>
     
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <!--<a class="navbar-brand" href="#">Rise of The Pirates</a>-->
+
+        <nav  id="border"class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <a class="navbar-brand" href="#">Rise of The Pirates</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,13 +28,13 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#features">Features</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Press Kit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>              
                 <li class="nav-item">
                 <a class="nav-link" href="#">Download</a>
@@ -35,19 +42,74 @@
             </ul>
           </div>
         </nav>
-                    <video autoplay muted loop id="myVideo">
-            <source src ="media/Background.mp4" type="video/mp4">
-            </video>
-        <div class="container">    
-            <div class =" col-xs-03 text-center video-container">
+        <video autoplay muted loop id="myVideo">
+         <source src ="media/BackgroundFleet.m4v" type="video/mp4">
+        </video>
+        <div class="trailer-logo col-12">    
+            <div class =" col text-center video-container">
                 <img class= "title-image" src ="images/CompiledLarge2.svg">
-                <div class="actual-video"><iframe width="560" height="315" src="https://www.youtube.com/embed/-fI7N6gNEVg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+                <div class="actual-video" id="videoBorder">
+                    <iframe id = "border"width="560" height="315" src="https://www.youtube.com/embed/CIqRDdOxJ5Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    
                 </div>                    
-                <div><button type="button" class="btn btn-info btn-lg">Download Now!</button>
-                    </div>
+                <button type="button" class="btn btn-primary btn-lg" id="steamButton">Steam Download Button </button>
             </div> 
         </div>
-    </body>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <div id="features" class="col text-center">
+            <div class = "image-Label">
+                <img src = "images/websiteLabelstemplatewithSprite.png">
+            </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+                   <h2 class="text-white">Pvp</h2> 
+                    <img id = "border" src = "images/CTC.gif">
+            </div>
+            <div class="col-sm">
+                   <h2 class="text-white">Conquere</h2> 
+                   <img id = "border" src = "images/Explore.gif">
+            </div>
+            <div class="col-sm">
+                   <h2 class="text-white">Customization</h2> 
+                   <img id = "border" src = "images/costumization.gif">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm">
+                   <h2 class="text-white">Powers</h2> 
+                   <img id = "border" src = "images/Skills.gif">
+            </div>
+            <div class="col-sm">
+                   <h2 class="text-white">Boss Fights</h2> 
+                   <img id = "border" src = "images/Boss.gif">
+            </div>
+            <div class="col-sm">
+                   <h2 class="text-white">Explore</h2> 
+                   <img id = "border" src = "images/explorings.gif">
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <div id="about" class="col text-center">
+        <div class = "image-Label2">
+            <img src = "images/about.png">
+        </div>
+        <h2 class="text-white">A retro <strong> Free to play 2D Pixel Topdown MORPG</strong>  adventure</h2>
+    <p>Create your own character and embark on an adventure all your own. Choosing a faction, finding treasure and sailing the seas.</p>
+    <p>With over <strong>36 unique classes</strong> to choose from and mystical books that grant incredible powers to be found there is a path for everyone.</p>
+    <p>With your new found power discover new islands, capture them under your flag. Become a swashbuckling Pirate or join the ranks of the Honorable Marines against the plague of piracy.</p>
+    </div>
+</body>
+<footer>
+  <div class="col text-center">
+    <a href="https://www.facebook.com/ROTPOnline"><i class="fa fa-2x fa-facebook" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/ROTPonline"><i class="fa fa-2x fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-2x fa-instagram"></i></a>
+      <p class="copyright">
+	© <script>var currentYear = new Date().getFullYear();document.write(currentYear);</script>, Ravanok.com, All Rights Reserved.
+</p>
+  </div>
+</footer>
 </html>
